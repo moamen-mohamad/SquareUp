@@ -1,5 +1,6 @@
 {
   "name": "vite-project",
+  "homepage": "https://moamen-mohamad.github.io/SquareUp/",
   "private": true,
   "version": "0.0.0",
   "type": "module",
@@ -9,7 +10,7 @@
     "lint": "eslint .",
     "preview": "vite preview",
     "predeploy": "npm run build",
-    "deploy":"gh-pages -d dist -f"
+    "deploy": "gh-pages -d dist"
   },
   "dependencies": {
     "framer-motion": "^12.23.12",
