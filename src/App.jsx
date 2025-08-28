@@ -13,7 +13,7 @@ function App() {
   return (
     <>
       <LMNavBar
-        image="/assets/images/Logo-full.svg"
+        image="/SquareUp/assets/images/Logo-full.svg"
         items={[
           { url: "/", content: "Home" },
           { url: "/Work", content: "Work" },
@@ -34,7 +34,7 @@ function App() {
       </Routes>
 
       <LMFooter
-        image="/assets/images/Logo-full.svg"
+        image="/SquareUp/assets/images/Logo-full.svg"
         items={[
           { url: "/", content: "Home" },
           { url: "#", content: "Service" },
