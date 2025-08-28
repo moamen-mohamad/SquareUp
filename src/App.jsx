@@ -8,6 +8,7 @@ import Work from './Pages/Work/Work'
 import AboutUS from './Pages/AboutUs/AboutUS'
 import LMNavBar from './Components/LMNavBar/LMNavBar'
 import LMFooter from './Components/LMFooter/LMFooter'
+import MmScrollToTop from './Components/MmScrollToTop/MmScrollToTop'
 
 function App() {
   return (
@@ -23,7 +24,7 @@ function App() {
         ]}
         btn="Contact Us"
       />
-
+      <MmScrollToTop />
       <Routes>
         <Route path='/' element={<Home />} />
         <Route path='/AboutUS' element={<AboutUS />} />

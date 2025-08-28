@@ -1,6 +1,6 @@
 .RDShowBtn {
     display: block;
-    margin-left: auto;
+    margin: 24px 0;
     padding: 18px 28px;
     font-size: 16px;
     font-weight: 500;
@@ -10,5 +10,10 @@
     backdrop-filter: blur(12px);
     color: var(--SecondBGColor);
     border: 1px solid var(--BorderColor);
+}
 
+.d-flex-columns {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
 }

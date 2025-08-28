@@ -1,5 +1,5 @@
 import './RDShowBtn.css'
-import  { useState } from 'react'
+import { useState } from 'react'
 import RDCard from '../RDCard/RDCard'
 
 const RDShowBtn = ({ initialCount = 4, Cards = [] }) => {
@@ -12,21 +12,21 @@ const RDShowBtn = ({ initialCount = 4, Cards = [] }) => {
     const visibleCards = show ? Cards : Cards.slice(0, initialCount)
 
     return (
-        <div>
-            <div className='RD_Container lm_whitespacing_x'>
+        <div className="d-flex-columns">
+            <div className='RD_Container'>
                 {visibleCards.map((Card, index) => (
-                    <RDCard 
-                        key={index} 
-                        number={Card.number} 
-                        title={Card.title} 
-                        description={Card.description} 
+                    <RDCard
+                        key={index}
+                        number={Card.number}
+                        title={Card.title}
+                        description={Card.description}
                     />
                 ))}
             </div>
-            
+
             {Cards.length > initialCount && (
-                <button 
-                    className='RDShowBtn' 
+                <button
+                    className='RDShowBtn'
                     onClick={() => setShow(!show)}
                 >
                     {show ? "Show Less" : "Show More"}
