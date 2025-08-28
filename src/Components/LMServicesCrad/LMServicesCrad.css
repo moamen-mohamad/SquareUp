@@ -1,0 +1,102 @@
+.lm-section-crud{
+    background-color: var(--MainBGColor);
+}
+
+.lm-form,
+.lm-form * ,
+.lm-table,
+.lm-table * {
+    color: var(--MainFontColor);
+    font-family: 'Barlow';
+}
+/* فورم  */
+.lm-form {
+display: flex;
+flex-direction: column;
+gap: 10px;
+max-width: 560px;
+margin: 16px 0 28px 0;
+}
+
+.lm-form label {
+display: flex;
+flex-direction: column;
+gap: 6px;
+font-size: 14px;
+opacity: 0.95;
+}
+
+.lm-form input,
+.lm-form textarea {
+padding: 10px 12px;
+border: 1px solid var(--SecondBGColor) ;
+border-radius: 8px;
+background: transparent;
+color: inherit;
+font-size: 14px;
+}
+
+.lm-form textarea {
+min-height: 110px;
+resize: vertical;
+}
+
+.lm-form button {
+align-self: flex-start;
+padding: 10px 16px;
+border-radius: 8px;
+border: 1px solid var(--SecondBGColor) ;
+background: var(--IDentity_color) ;
+color: var(--ColorBlack);
+cursor: pointer;
+font-size: 14px;
+}
+
+.lm-form button:hover { filter: brightness(1.05); }
+
+/* جدول  */
+.lm-table-wrap {
+width: 100%;
+overflow-x: auto;
+}
+
+.lm-table {
+width: 100%;
+border-collapse: collapse;
+min-width: 720px; 
+}
+
+.lm-table th,
+.lm-table td {
+border: 1px solid var(--SecondBGColor) ;
+padding: 12px;
+text-align: left;
+vertical-align: top;
+font-size: 14px;
+}
+
+.lm-table th {
+background: var(--ColorDashTh);
+font-weight: 600;
+}
+
+.lm-table img {
+width: 30px;
+height: 30px;
+border-radius: 6px;
+}
+
+/* أزرار الأكشن */
+.lm-actions {
+white-space: nowrap;
+}
+.lm-actions button {
+padding: 8px 12px;
+border-radius: 8px;
+border: 1px solid var(--SecondBGColor) ;
+background: var(--IDentity_color);
+color: var(--ColorBlack);
+cursor: pointer;
+font-size: 13px;
+margin-right: 8px;
+}

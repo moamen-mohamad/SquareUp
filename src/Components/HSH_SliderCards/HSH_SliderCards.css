@@ -1,0 +1,238 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.HSH_CardsContainer {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding-left: 0;
+    padding-right: 0;
+    position: relative;
+    background-color: var(--MainBGColor);
+}
+
+.HSH_Slider {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+    width: 100%;
+}
+
+.HSH_NavButton {
+    background-color: transparent;
+    border: none;
+    font-size: 32px;
+    cursor: pointer;
+    z-index: 5; 
+    font-family: "Barlow", sans-serif;
+    color: var(--MainFontColor);
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+}
+
+.HSH_NavButton.left {
+    left: 10px;
+}
+
+.HSH_NavButton.right {
+    right: 10px;
+}
+
+.HSH_Slide {
+    display: flex;
+    justify-content: center;
+    align-items: stretch;
+    width: 100%;
+    transition: all 0.3s ease;
+}
+
+.HSH_Slide.items-1 .HSH_Card {
+    flex: 0 0 100%;
+    max-width: 100%;
+}
+
+.HSH_Slide.items-2 .HSH_Card {
+    flex: 0 0 50%;
+    max-width: 50%;
+}
+
+.HSH_Card {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    border: 1px solid var(--BorderColor);
+    font-family: "Barlow", sans-serif;
+    padding: 20px;
+}
+
+.HSH_Card h2 {
+    color: var(--CardTitleGreenColor);
+    font-size: 28px;
+    font-weight: 500;
+    padding-bottom: 20px;
+    text-align: left;
+    width: 100%;
+}
+
+.HSH_Card>p {
+    color: var(--SecondFontColor);
+    font-size: 18px;
+    font-weight: 400;
+    padding-bottom: 20px;
+    text-align: left;
+    width: 100%;
+}
+
+.HSH_CardContent {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    border-radius: 8px;
+    border: 1px solid var(--BorderColor);
+    padding: 15px;
+    background-color: var(--SecondaryButtonBG);
+}
+
+.HSH_ClientImg {
+    width: 60px;
+    height: 60px;
+    object-fit: cover;
+    flex-shrink: 0;
+}
+
+.HSH_Info {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+}
+
+.HSH_Info h3 {
+    font-weight: 500;
+    color: var(--MainFontColor);
+    font-size: 20px;
+    line-height: 150%;
+}
+
+.HSH_Info p {
+    font-weight: 400;
+    color: var(--SecondFontColor);
+    font-size: 18px;
+    line-height: 150%;
+}
+
+.HSH_Button,
+.HSH_Button:link,
+.HSH_Button:visited {
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+    text-decoration: none;
+    color: var(--MainFontColor);
+    gap: 10px;
+    opacity: 1;
+    border-radius: 8px;
+    border: 1px solid var(--BorderColor);
+    padding: 18px 20px;
+    font-weight: 500;
+    background-color: var(--SecondBGColor);
+    font-size: 18px;
+    margin-left: auto;
+    cursor: pointer;
+}
+
+.HSH_Button:hover {
+    background-color: var(--SecondaryButtonBG);
+}
+
+.HSH_Dots {
+    margin: 24px 0;
+    display: flex;
+    gap: 24px;
+    justify-content: center;
+    align-items: center;
+}
+
+.HSH_Dots .HSH_Dot {
+    width: 12px;
+    height: 12px;
+    border-radius: 50%;
+    background: var(--BorderColor);
+    cursor: pointer;
+}
+
+.HSH_Dots .HSH_Dot.active {
+    background: var(--CardTitleGreenColor);
+}
+@media screen and (max-width: 1440px){
+    .HSH_Card h2 {
+    color: var(--CardTitleGreenColor);
+    font-size: 20px;
+    font-weight: 500;
+    padding-bottom: 20px;
+    text-align: left;
+    width: 100%;
+}
+.HSH_Card>p {
+    color: var(--SecondFontColor);
+    font-size: 16px;
+    padding-bottom: 20px;
+    text-align: left;
+    width: 100%;
+}
+    .HSH_ClientImg {
+        width: 50px;
+        height: 50px;
+    }
+.HSH_Info h3 {
+    color: var(--MainFontColor);
+    font-size: 16px;
+    line-height: 150%;
+}
+
+.HSH_Info p {
+    color: var(--SecondFontColor);
+    font-size: 14px;
+    line-height: 150%;
+}
+
+.HSH_Button,
+.HSH_Button:link,
+.HSH_Button:visited {
+    border-radius: 6px;
+    padding: 14px 16px;
+    font-size: 14px;
+}
+
+}
+@media screen and (max-width: 992px) {
+    .HSH_CardsContainer {
+        gap: 20px;
+    }
+
+    .HSH_Button {
+        display: none !important;
+    }
+
+    .HSH_CardContent {
+        gap: 12px;
+    }
+
+    .HSH_ClientImg {
+        width: 40px;
+        height: 40px;
+    }
+
+    .HSH_NavButton.left {
+        left: 5px;
+    }
+    .HSH_NavButton.right {
+        right: 5px;
+    }
+}

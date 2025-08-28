@@ -1,0 +1,261 @@
+footer{
+    border-top: 1px solid var(--SecondBGColor);
+    background-color: var(--MainBGColor);
+    .lm_footer_Part1{
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        padding-bottom: 50px;
+        padding-top: 50px;
+        gap: 5px;
+
+        .lm_navItems{
+            max-width: 574px;
+            display: flex;
+            gap: 30px;
+            list-style: none;
+
+            li a{
+                text-decoration: none;
+            }
+        }
+
+        .lm_stay_Connected{
+            max-width: 402px;
+            height: 92px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            padding-left: 14px;
+            border: 1px solid var(--SecondBGColor);
+            border-radius: 12px;
+            gap: 20px;
+
+            .lm_socialIcons{
+                display: flex;
+                align-items: center;
+                justify-content: center;
+            }
+
+            .lm_socialLink{   
+                max-width: 64px;
+                height: 64px;
+                margin-right: 14px;
+                padding: 20px;
+                border-radius: 8px;
+                background: linear-gradient(to bottom , var(--ColorIcons) 0% , transparent 100% ) ;
+                border: 1px solid linear-gradient( to bottom , var(--ColorFooterIcon) 0% , transparent 100%);
+            }
+
+            .lm_socialIcon{
+                width: 24px;
+                height: 19.5px;
+                background-color: transparent;
+            }
+        }
+    }
+    .lm_footer_Part2{
+        border-top: 1px solid var(--SecondBGColor);
+        padding-top: 50px;
+        padding-bottom: 50px;
+        display: flex;
+        justify-content: space-between;
+
+        .lm_contactIcons{
+            display: flex;
+            justify-content: start;
+            gap: 30px;
+        }
+
+        .lm-contactIcon{
+            display: flex;
+            justify-content: start;
+            align-items: center;
+            gap: 10px;
+            padding-bottom: 16px;
+            border-bottom: 1px solid var(--SecondBGColor);
+
+            img{
+                width: 24px;
+                height: 24px;
+            }
+
+            .lm_font_size_weight2{
+                font-weight: 400;
+            }
+        }
+
+        .lm_font_size_weight2{
+            font-weight: 400;
+        }
+    }
+}
+
+
+@media screen and (max-width : 1440px ) {
+
+    .lm_font_size_weight2{
+        font-size: 16px;
+        font-weight: 500;
+    }
+
+    footer{
+        .lm_footer_Part1{
+            padding-bottom: 40px;
+            padding-top: 40px;
+
+            img{
+                width: 118.48px;
+                height: 40px;
+            }
+
+            .lm_navItems{
+                max-width: 470px;
+                gap: 20px;
+            }
+
+            .lm_stay_Connected{
+                max-width: 337px;
+                height: 72px;
+                padding-left: 20px;
+                border-radius: 8px;
+                gap: 20px;
+
+                .lm_socialLink{
+                    max-width: 52px;
+                    height: 52px;
+                    margin-right: 10px;
+                    padding: 16px;
+                    border-radius: 6px;
+                }
+
+                .lm_socialIcon{
+                    width: 20px;
+                    height: 20px;
+                }
+            }
+        }
+
+        .lm_footer_Part2{
+            padding-top: 40px;
+            padding-bottom: 40px;
+
+            .lm_contactIcons{
+                gap: 22px;
+            }
+
+            .lm-contactIcon{
+                gap: 6px;
+                padding-bottom: 12px;
+
+                img{
+                    width: 13.75px;
+                    height: 16.87px;
+                }
+            }
+
+            .lm_font_size_weight2{
+                font-size: 14px;
+            }
+        }
+    }
+}
+
+@media screen and (max-width : 992px) {
+    footer{
+        .lm_footer_Part1{
+            padding-bottom: 30px;
+            padding-top: 30px;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            border-bottom: 0px;
+            
+
+            img{
+                width: 148.1px;
+                height: 50px;
+                margin-bottom: 30px;
+            }
+
+            .lm_line_for_img{
+                width: 100%;
+                height: 1px;
+                display: flex;
+                background-color: var(--SecondBGColor);
+            }
+
+            .lm_navItems{
+                width: 100%;
+                padding: 30px 19.5px ;
+                flex-wrap: wrap;
+                justify-content: center;
+                gap: 20px;
+            }
+
+            .lm_stay_Connected{
+                max-width: 358px;
+                height: 112px;
+                flex-direction: column;
+                align-items: center;
+                padding: 16px 10px 16px 20px;
+                border-radius: 8px;
+                gap: 14px;
+
+                .lm_socialLink{
+                    margin-right: 10px;
+                    padding: 16px;
+                    border-radius: 6px;
+                }
+            }
+        }
+
+        .lm_footer_Part2{
+            width: 100%;
+            border-top: none;
+            padding-bottom: 30px;
+            flex-direction: column;
+            align-items: center;
+            padding-top: 0px;
+
+            .lm_contactIcons{
+                width: 100%;
+                flex-direction: column;
+                justify-content: center;
+                align-items: center;
+                border-bottom: none;
+                padding: 21.5px 0px;
+                gap: 10px;
+
+                .lm-line{
+                    width: 100%;
+                    height: 1px;
+                    display: flex;
+                    justify-content: center;
+                    align-items: center;
+                    background-color: var(--SecondBGColor);
+                    margin: 20px 0;
+                }
+
+                .lm-contactIcon{
+                    padding-bottom: 0px;
+                    border-bottom: none;
+
+                    img{
+                        width: 13.75px;
+                        height: 16.87px;
+                    }
+
+                    .lm_font_size_weight2{
+                        font-size: 14px;
+                        text-align: center;
+                    }
+                }
+            }
+
+            .lm_font_size_weight2{
+                font-size: 14px;
+            }
+        }
+    }
+}

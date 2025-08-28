@@ -1,0 +1,12 @@
+.lm-dashboard-title{
+    display: flex;
+    justify-content: center;
+    color: var(--IDentity_color);
+    font-family: 'Barlow';
+}
+.lm-dash-contact{
+    .lm-contact-contactIcons,
+    .lm-contact-down-footer{
+        display: none;
+    }
+}

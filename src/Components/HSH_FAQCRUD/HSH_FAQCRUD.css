@@ -1,0 +1,127 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Barlow"
+}
+
+.HSH_FAQCRUD {
+    width: 100%;
+    padding: 20px 80px;
+    border-radius: 12px;
+    color: var(--IDentity_color);
+    box-shadow: 0 2px 8px var(--IDentity_color);
+}
+
+.FAQ_Title{
+    color: var(--IDentity_color);
+}
+
+/* Form */
+.faq-form {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+    margin-bottom: 30px;
+}
+
+.faq-form input,
+.faq-form textarea {
+    padding: 15px;
+    border-radius: 8px;
+    border: 1px solid var(--BorderColor);
+    background-color: var(--SecondBGColor);
+    color: var(--MainFontColor);
+    font-size: 14px;
+    font-weight: 400;
+    width: 100%;
+}
+
+.faq-form button {
+    width: 100%;
+    height: 63px;
+    border-radius: 8px;
+    border: 1px solid var(--BorderColor);
+    background-color: var(--IDentity_color);
+    color: var(--MainBGColor);
+    font-weight: 600;
+    font-size: 14px;
+    cursor: pointer;
+    align-self: flex-start;
+}
+
+.faq-table {
+    width: 100%;
+    border-radius: 12px;
+    border-collapse: collapse;
+}
+
+.faq-table th{
+    color:var(--MainBGColor);
+    text-align: left;
+    padding: 15px;
+    border: 1px solid var(--BorderColor);
+    font-size: 14px;
+    font-weight: 600;
+}
+
+.faq-table td {
+    text-align: left;
+    padding: 15px;
+    border: 1px solid var(--BorderColor);
+    font-size: 14px;
+    font-weight: 400;
+    color: var(--MainFontColor);
+}
+
+.faq-table th {
+    background-color: var(--IDentity_color);
+    font-weight: 500;
+}
+
+.faq-table td button {
+    margin-right: 10px;
+    width: auto;
+    padding: 8px 12px;
+    border-radius: 8px;
+    border: 1px solid var(--BorderColor);
+    background-color: var(--SecondBGColor);
+    cursor: pointer;
+    font-weight: 500;
+    font-size: 12px;
+}
+
+/* ✅ زر Edit (الأول داخل td) */
+.faq-table td button:first-child {
+    background-color: var(--IDentity_color); /* أخضر */
+    color: var(--MainFontColor);
+    border: none;
+}
+
+/* ✅ زر Delete (الثاني داخل td) */
+.faq-table td button:last-child {
+    background-color: var(--DangerColor); /* أحمر */
+    color: var(--MainFontColor);
+    border: none;
+}
+
+@media screen and (max-width: 1440px) {
+    .HSH_FAQCRUD {
+        padding: 20px 40px;
+    }
+}
+
+@media screen and (max-width: 992px) {
+    .HSH_FAQCRUD {
+        padding: 20px;
+    }    
+    
+    .faq-form button {
+        width: 100%;
+    }
+    .faq-table th,
+    .faq-table td {
+        font-size: 12px;
+        padding: 10px;
+    }
+}

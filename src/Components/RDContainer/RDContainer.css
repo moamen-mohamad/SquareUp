@@ -1,0 +1,24 @@
+.RD_Container{
+    width: 100%;
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
+    margin: 0 auto;
+
+    
+}
+.RDNoData{
+    text-align: start;
+    color: var(--MainFontColor);
+}
+
+
+@media screen and (max-width: 1440px){
+
+}
+
+@media screen and (max-width: 992px){
+    .RD_Container{
+        display: grid;
+        grid-template-columns: repeat(1,1fr);
+    }
+}

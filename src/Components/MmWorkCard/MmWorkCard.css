@@ -1,0 +1,135 @@
+.work-card {
+    font-family: "Barlow", "sans-serif";
+    width: 50%;
+    padding: 0 50px 100px 50px;
+    border: 1px solid var(--SecondBGColor);
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+
+    h3 {
+        padding: 30px 0;
+        width: 100%;
+        font-weight: 500;
+        font-size: 26px;
+        color: var(--SecondPColor);
+        border: 1px, 0px solid var(--SecondBGColor);
+    }
+
+    .project-photo {
+        width: 100%;
+        border-radius: 24px;
+    }
+
+    span {
+        font-weight: 500;
+        font-size: 24px;
+        color: var(--SecondFontColor);
+    }
+
+    div {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+
+        a {
+            padding: 10px 14px;
+            border-radius: 8px;
+            background: var(--SecondBGColor);
+            font-size: 20px;
+            color: var(--SecondPColor);
+        }
+
+        .slanted-arrow {
+            width: 54px;
+            height: 54px;
+            padding: 10px;
+            border-radius: 8px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            background-color: var(--SecondBGColor);
+
+            img {
+                background-color: var(--SecondBGColor);
+            }
+        }
+    }
+
+    p {
+        font-family: Inter;
+        font-size: 18px;
+        line-height: 150%;
+        color: var(--SecondPColor);
+    }
+}
+
+@media screen and (max-width: 1440px) {
+    .work-card {
+        padding: 0 40px 80px 40px;
+        gap: 24px;
+
+        h3 {
+            padding: 24px 0;
+            font-size: 20px;
+        }
+
+        span {
+            font-size: 18px;
+        }
+
+        div {
+            a {
+                padding: 8px 12px;
+                border-radius: 6px;
+                font-size: 16px;
+            }
+
+            .slanted-arrow {
+                width: 46px;
+                height: 46px;
+                padding: 10px;
+                border-radius: 6px;
+            }
+        }
+
+        p {
+            font-size: 16px;
+        }
+    }
+}
+
+@media screen and (max-width: 992px) {
+    .work-card {
+        width: 100%;
+        padding: 0 24px 40px 24px;
+        gap: 20px;
+
+        h3 {
+            padding: 20px 0;
+            font-size: 20px;
+        }
+
+        span {
+            font-size: 18px;
+        }
+
+        div {
+            a {
+                padding: 8px 10px;
+                border-radius: 6px;
+                font-size: 14px;
+            }
+
+            .slanted-arrow {
+                width: 46px;
+                height: 46px;
+                border-radius: 6px;
+            }
+        }
+
+        p {
+            font-size: 14px;
+        }
+    }
+}

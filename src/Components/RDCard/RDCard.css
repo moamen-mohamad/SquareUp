@@ -1,0 +1,86 @@
+.RD_Card{
+    width: 100%;
+    max-width: 798px;
+    border: 1px solid var(--SecondPColor);
+    padding: 100px 50px;
+    background-color: var(--MainBGColor);
+
+    .RD_CardHeader{
+        display: flex;
+        align-items: center;
+        justify-content: flex-start;
+        .RD_number{
+            font-size: 150px;
+            font-family: 'Barlow';
+            font-weight: 600;
+            margin-right: 14px;
+            color: var(--CardTitleColor);
+        }
+        .RD_title{
+            display: block;
+            width: 100%;
+            font-size: 30px;
+            font-weight: 500;
+            padding-bottom: 26px;
+            border-bottom: 1px solid var(--SecondPColor);
+            color: var(--SecondPColor);
+        }
+        }
+        .RD_description{
+            font-size: 18px;
+            font-family: 'Inter';
+            padding-top: 50px;
+            color: var(--SecondPColor);
+    
+        }
+    }
+    
+    @media screen and (max-width: 1440px){
+        .RD_Card{
+            width: 100%;
+            max-width: 640px;
+            padding: 80px 40px;
+            margin: 0 auto;
+            .RD_CardHeader{
+                
+                .RD_number{
+                    font-size: 120px;
+                }
+                .RD_title{
+                    font-size: 24px;
+                    padding-bottom: 20px;
+                }
+            }
+            .RD_description{
+                font-size: 16px;  
+                padding-top: 40px;
+            }
+        }
+    }
+    
+    @media screen and (max-width: 992px){
+        .RD_Card{
+            max-width: 358px;
+            padding: 40px 24px;
+
+
+            .RD_CardHeader{
+                
+                .RD_number{
+                    font-size: 80px;
+                    margin-right: 10px;
+                }
+                .RD_title{
+                    font-size: 20px;
+                    padding-bottom: 18px;
+
+                }
+            }
+            .RD_description{
+                font-size: 14px;
+                padding-top: 30px;
+            }
+        }
+    }
+    
+    

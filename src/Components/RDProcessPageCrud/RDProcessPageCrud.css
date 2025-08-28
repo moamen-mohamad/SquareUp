@@ -1,0 +1,42 @@
+
+.RD_Btn{
+    padding: 5px 20px;
+    border-radius: 5px;
+    margin-left: 5px;
+    background-color: var(--IDentity_color);
+    color: var(--HeroBGColor);
+    border: none;
+    }
+.RD_Form{
+    input{
+        padding: 5px;
+        border-radius: 5px;
+    }
+}
+.RD_Table{
+    width: 100%;
+    margin-top: 20px;
+    text-align: center;
+    border: 1px solid var(--SecondPColor);
+    border-collapse: collapse;
+
+    .RD_RedBtn{
+        padding: 5px 12px;
+        margin: 5px;
+        background-color: var(--Colorred);
+        border-radius: 5px;
+        color: var(--MainFontColor);
+        border: none;
+
+
+    }
+
+    th ,td{
+        border: 1px solid var(--SecondPColor);
+        padding: 5px;
+        color: var(--MainFontColor);
+
+    }
+    
+    
+}

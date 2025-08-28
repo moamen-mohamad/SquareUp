@@ -1,0 +1,152 @@
+.crud-container {
+    padding: 20px;
+    border-radius: 12px;
+    box-shadow: 0 2px 8px var(--IDentity_color);
+}
+
+.crud-container h2 {
+    margin-bottom: 16px;
+    font-size: 20px;
+    font-family: "Barlow";
+    font-weight: bold;
+    color: var(--IDentity_color);
+}
+
+.crud-form {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 12px;
+}
+
+.crud-form input,
+.crud-form textarea,
+.crud-form input[type="file"] {
+    flex: 1 1 48%;
+    min-width: 0;
+    padding: 10px;
+    border: 1px solid var(--BorderColor);
+    border-radius: 8px;
+    font-size: 14px;
+    outline: none;
+    transition: border 0.2s;
+    box-sizing: border-box;
+}
+
+.crud-form input:focus,
+.crud-form textarea:focus {
+    border-color: var(--IDentity_color);
+}
+
+.crud-form button {
+    flex: 1 1 100%;
+    padding: 12px;
+    background: var(--IDentity_color);
+    color: var(--MainBGColor);
+    font-size: 15px;
+    font-family: "Barlow";
+    font-weight: 600;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    margin-bottom: 20px;
+}
+
+.crud-table {
+    width: 100%;
+    border-collapse: collapse;
+    border-radius: 12px;
+    overflow: hidden;
+}
+
+.crud-table th,
+.crud-table td {
+    font-family: "Barlow";
+    color: var(--MainFontColor);
+    padding: 12px 15px;
+    text-align: left;
+    font-size: 14px;
+}
+
+.crud-table th {
+    background: var(--IDentity_color);
+    color: var(--MainBGColor);
+    font-weight: 600;
+}
+
+.crud-table td {
+    border-bottom: 1px solid var(--BorderColor);
+}
+
+.crud-table td button {
+    margin-right: 8px;
+    padding: 6px 12px;
+    font-size: 13px;
+    border-radius: 6px;
+    border: none;
+    cursor: pointer;
+}
+
+.crud-table td button:first-of-type {
+    background: var(--IDentity_color);
+    border: 1px solid var(--BorderColor);
+    color: var(--MainFontColor);
+}
+
+.crud-table td button:last-of-type {
+    background: var(--DangerColor);
+    color: var(--MainBGColor);
+}
+
+@media (max-width: 1440px) {
+
+    .crud-form input,
+    .crud-form textarea {
+        flex: 1 1 48%;
+    }
+}
+
+@media (max-width: 992px) {
+
+    .crud-form input,
+    .crud-form textarea,
+    .crud-form input[type="file"] {
+        flex: 1 1 100%;
+    }
+
+    .crud-table {
+        display: block;
+    }
+
+    .crud-table thead {
+        display: none;
+    }
+
+    .crud-table tbody,
+    .crud-table tr {
+        display: block;
+        margin-bottom: 12px;
+    }
+
+    .crud-table td {
+        display: block;
+        background: var(--MainBGColor);
+        color: var(--MainFontColor);
+        padding: 12px;
+        border-radius: 8px;
+        border-bottom: none;
+        box-shadow: 0 2px 6px rgba(0, 0, 0, 0.05);
+        margin-bottom: 6px;
+    }
+
+    .crud-table td::before {
+        content: attr(data-label);
+        font-weight: bold;
+        display: block;
+        margin-bottom: 4px;
+        color: var(--IDentity_color);
+    }
+
+    .crud-table td button {
+        margin-top: 6px;
+    }
+}

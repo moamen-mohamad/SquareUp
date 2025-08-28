@@ -1,0 +1,136 @@
+.RDHero{
+    position: relative;
+    height: 100vh;
+    padding-top: 150px;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-image: url(/assets/images/Square-effect.png) , url(/assets/images/hero-home-bg.png);
+    background-repeat: repeat , no-repeat ;
+    background-position: top,  bottom center;
+    background-size: auto ,auto;
+    object-fit: cover;
+    background-color: var(--HeroBGColor);
+    border: 1px solid var(--BorderColor);
+    .RDtitle{
+
+        width: 50%;
+        font-family: 'Barlow';
+        font-size: 68px;
+        font-weight: 600;
+        color: var(--MainFontColor);
+    }
+    .RDdescription{
+        margin-top: 40px;
+        padding: 24px 40px;
+        font-family: 'Barlow';
+        font-size: 22px;
+        background-color: var( --SecondaryButtonBG);
+        backdrop-filter: blur(12px);
+        border-radius: 12px;
+        border: 1px solid var(--BorderColor);
+        box-shadow: 0 4px 4px var(--ShadowColor);
+        color: var(--SecondPColor);
+        span{
+            padding: 12px 14px;
+            font-family: 'Barlow';
+            font-size: 22px;
+            background-color: var(--SecondBGColor);
+            border-radius: 8px;
+            box-shadow: 0 4px 4px var(--ShadowColor);
+            color: var(--MainFontColor);
+        }
+        
+    }
+    .RDbtns{
+        margin-top: 50px;
+
+        .RDBtn{
+            margin-right: 13px;
+            padding: 18px 28px;
+            font-size: 18px;
+            font-weight: 500;
+            font-family: 'Barlow';
+            background-color: var(--ColorIcons) !important;
+            backdrop-filter: blur(12px);
+            border-radius: 10px;
+            box-shadow: 0 4px 4px var(--ShadowColor);
+            text-decoration: none;
+            border: 1px solid var(--BorderColor);
+            color: var(--MainFontColor);
+
+        }
+        .RDGreenBtn{
+            padding: 18px 28px;
+            font-size: 18px;
+            font-weight: 500;
+            font-family: 'Barlow';
+            border-radius: 10px;
+            text-decoration: none;
+            background-color: var(--IDentity_color);
+            backdrop-filter: blur(12px);
+            color: var(--SecondBGColor);
+        }
+    }
+    
+}
+
+
+@media screen and (max-width: 1440px){ 
+    .RDHero{
+        .RDtitle{
+            font-size: 48px;
+        }
+        .RDdescription{
+            font-size: 18px;
+            span{
+                font-size: 18px;
+                
+            }
+
+        }
+        .RDbtns{
+            .RDBtn{
+                padding: 14px 20px;
+                }
+            .RDGreenBtn{
+                padding: 14px 20px;
+            }
+        }
+        
+    }
+}
+
+@media screen and (max-width: 992px){ 
+    .RDHero{
+        .RDtitle{
+            font-size: 34px;
+            width: 100%;
+        }
+        .RDdescription{
+            font-size: 16px;
+
+            span {
+                font-size: 16px;
+                background: none;
+                box-shadow: 0 0 0 0;
+                color: var(--SecondPColor);
+                padding: 0;
+            }
+        }
+        .RDbtns{
+            .RDBtn{
+                padding: 14px 20px;
+                font-size: 14px;
+                }
+            .RDGreenBtn{
+                padding: 14px 20px;
+                font-size: 14px;
+    
+            }
+        }
+        
+        
+    }
+}

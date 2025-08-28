@@ -1,0 +1,25 @@
+.work-list {
+    font-family: "Barlow", "sans-serif";
+    padding: 0 162px;
+    background-color: var(--MainBGColor);
+    display: flex;
+    flex-wrap: wrap;
+
+    h2 {
+        font-size: 32px;
+        margin: 0 auto;
+    }
+
+}
+
+@media screen and (max-width: 1440px) {
+    .work-list {
+        padding: 0 80px;
+    }
+}
+
+@media screen and (max-width: 992px) {
+    .work-list {
+        padding: 0 16px;
+    }
+}

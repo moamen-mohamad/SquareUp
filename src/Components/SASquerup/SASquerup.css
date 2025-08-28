@@ -1,0 +1,122 @@
+.squerup {
+  width: 100%;
+  padding-top: 100px;
+  max-width: 1596px;
+  display: flex;
+  flex-direction: column;
+  gap: 50px;
+  background-color: var(--MainBGColor);
+}
+
+.squerup-content {
+  width: 93.73%;
+  max-width: 1496px;
+  display: flex;
+  flex-direction: column;
+  gap: 14px;
+  text-align: start;
+}
+
+.squerup-title {
+  padding-top: 120px;
+  font-family: "Barlow", sans-serif;
+  font-weight: 600;
+  font-size: 48px;
+  line-height: 100%;
+  color: var(--MainFontColor);
+  white-space: normal;
+}
+
+.squerup-subtitle {
+  font-family: "Barlow", sans-serif;
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 150%;
+  color: var(--SecondFontColor);
+  max-width: 1196px;
+  white-space: normal;
+}
+
+.squerup-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: fit-content;
+  padding: 14px 12px;
+  margin-bottom: 50px;
+  border: 1px solid var(--SecondBGColor);
+  background: var(--SecondBGColor);
+  border-radius: 8px;
+  white-space: nowrap;
+}
+
+.container-subtitle {
+  font-family: "Barlow", sans-serif;
+  font-weight: 400;
+  font-size: 22px;
+  line-height: 130%;
+  color: var(--MainFontColor);
+  margin: 0;
+  background: none;
+  white-space: nowrap;
+}
+
+@media (max-width: 1440px) {
+  .squerup {
+    max-width: 1280px;
+    padding: 0 40px;
+    gap: 40px;
+  }
+
+  .squerup-title {
+    font-size: 38px;
+    padding-top: 80px;
+  }
+
+  .squerup-subtitle {
+    font-size: 16px;
+  }
+
+  .squerup-container {
+    border-radius: 6px;
+    margin-bottom: 40px;
+  }
+
+  .container-subtitle {
+    font-size: 18px;
+    line-height: 100%;
+  }
+}
+
+@media (max-width: 992px) {
+  .squerup {
+    align-items: flex-start;
+    text-align: start;
+    gap: 30px;
+  }
+
+  .squerup-content {
+    gap: 6px;
+  }
+
+  .squerup-title {
+    font-size: 28px;
+    padding-top: 40px;
+  }
+
+  .squerup-subtitle {
+    font-size: 14px;
+  }
+
+  .squerup-container {
+    padding: 20px 12px;
+    max-width:fit-content;
+    margin-bottom: 40px;
+  }
+
+  .container-subtitle {
+    font-size: 16px;
+    text-align: center;
+    text-wrap: wrap;
+  }
+}

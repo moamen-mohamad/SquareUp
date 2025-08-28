@@ -1,0 +1,14 @@
+.RDShowBtn {
+    display: block;
+    margin-left: auto;
+    padding: 18px 28px;
+    font-size: 16px;
+    font-weight: 500;
+    border-radius: 10px;
+    text-decoration: none;
+    background-color: var(--IDentity_color);
+    backdrop-filter: blur(12px);
+    color: var(--SecondBGColor);
+    border: 1px solid var(--BorderColor);
+
+}

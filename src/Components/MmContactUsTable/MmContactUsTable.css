@@ -1,0 +1,54 @@
+.contact-table {
+    font-family: "Barlow", "sans-serif";
+    width: 100%;
+    margin-bottom: 32px;
+    border-collapse: collapse;
+    background-color: var(--MainBGColor);
+    color: var(--MainFontColor);
+
+    th,
+    td {
+        border: 1px solid var(--MainFontColor);
+        padding: 4px;
+        text-align: center;
+    }
+
+    th {
+        background-color: var(--TableHeaderBG);
+        padding: 8px;
+
+    }
+
+    td:last-child {
+        display: flex;
+    }
+
+    button {
+        width: 50%;
+        padding: 4px 8px;
+        margin: 2px;
+        background-color: var(--IDentity_color);
+        color: var(--MainBGColor);
+        border: none;
+        cursor: pointer;
+        border-radius: 4px;
+        transition: all 0.2s;
+    }
+
+    button.delete {
+        background-color: var(--DangerColor);
+        color: var(--MainFontColor);
+    }
+
+    button:hover {
+        background-color: var(--MainFontColor);
+        color: var(--ColorBlack);
+    }
+}
+
+.note-mmContactUsTable {
+    margin-top: 8px;
+    padding: 8px 16px;
+    text-align: center;
+    background-color: var(--SecondBGColor);
+}

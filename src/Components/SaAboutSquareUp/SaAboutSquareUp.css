@@ -1,0 +1,187 @@
+.SaAboutSquareUp {
+  padding-top: 150px;
+  padding-bottom: 150px;
+  background-color: var(--SecondBGColor);
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 100px;
+  border: 1px solid #262626;
+
+  .about-text {
+    width: 598px;
+    gap: 20px;
+    font-family: "Barlow", sans-serif;
+    display: flex;
+    flex-direction: column;
+
+    .about-title {
+      font-size: 48px;
+      font-weight: 600;
+      color: var(--MainFontColor);
+    }
+
+    .about-subtitle {
+      font-size: 20px;
+      color: var(--SecondFontColor);
+    }
+  }
+
+  .about-image {
+    width: 598px;
+    height: 571px;
+    position: relative;
+    background: url('/assets/images/head-bg-5-bw.png') center / cover no-repeat;
+    border-radius: 16px;
+
+    .lines-container {
+      .line {
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        width: 100%;
+        height: 2px;
+        background: linear-gradient(90deg,
+            transparent 0%,
+            rgba(172, 255, 36, 0.3) 20%,
+            rgba(172, 255, 36, 0.8) 50%,
+            rgba(172, 255, 36, 0.3) 80%,
+            transparent 100%);
+      }
+
+      .line-0 {
+        transform: translate(-50%, -50%) rotate(0deg);
+      }
+
+      .line-90 {
+        transform: translate(-50%, -50%) rotate(90deg);
+      }
+
+      .line-180 {
+        transform: translate(-50%, -50%) rotate(180deg);
+      }
+
+      .line-270 {
+        transform: translate(-50%, -50%) rotate(270deg);
+      }
+    }
+
+    .icon-wrapper {
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+      z-index: 8;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      background: url('/assets/images/layer-bluer.svg'), no-repeat center,
+        radial-gradient(50% 50% at 50% 50%, rgba(255, 255, 255, 0.8) 0%, rgba(255, 255, 255, 0) 100%);
+      background-size: contain;
+      backdrop-filter: blur(217px);
+      opacity: 1;
+      .about-icon {
+        width: 150px;
+        height: 150px;
+        filter: drop-shadow(0 2px 8px rgba(0, 0, 0, 0.2)) drop-shadow(0 0 12px rgba(172, 255, 36, 0.15)) drop-shadow(0 0 24px rgba(172, 255, 36, 0.08));
+      }
+
+    }
+  }
+
+  .about-image::before {
+    content: "";
+    position: absolute;
+    inset: 0;
+    border-radius: 16px;
+    background:
+      url('/assets/images/asfalt-light.png'),
+      url('/assets/images/Square-effect.png'),
+      radial-gradient(circle at 25% 25%, rgba(64, 64, 64, 0.3) 1px, transparent 1px),
+      radial-gradient(circle at 75% 75%, rgba(64, 64, 64, 0.3) 1px, transparent 1px),
+      linear-gradient(45deg, rgba(32, 32, 32, 0.8) 25%, transparent 25%),
+      linear-gradient(-45deg, rgba(32, 32, 32, 0.8) 25%, transparent 25%), #1a1a1a;
+    opacity: 0.6;
+  }
+
+  .about-image::after {
+    content: "";
+    position: absolute;
+    inset: 0;
+    background: rgba(171, 255, 36, 0.146);
+    mix-blend-mode: overlay;
+  }
+}
+
+
+
+@media (max-width: 1440px) {
+  .SaAboutSquareUp {
+    padding-top: 80px;
+    padding-bottom: 80px;
+    /* flex-wrap: wrap;
+    justify-content: center; */
+
+    .about-text {
+      width: 490px;
+      gap: 16px;
+
+      .about-title {
+        font-size: 38px;
+      }
+
+      .about-subtitle {
+        font-size: 16px;
+        line-height: 150%;
+      }
+    }
+
+    .about-image {
+      width: 490px;
+      height: 483px;
+
+      .icon-wrapper {
+        .about-icon {
+          width: 100px;
+          height: 100px;
+        }
+      }
+    }
+  }
+}
+
+
+@media (max-width: 992px) {
+  .SaAboutSquareUp {
+    padding-top: 40px;
+    padding-bottom: 40px;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 30px;
+
+    .about-text {
+      width: 100%;
+      gap: 16px;
+
+      .about-title {
+        font-size: 28px;
+      }
+
+      .about-subtitle {
+        font-size: 14px;
+      }
+    }
+
+    .about-image {
+      width: 358px;
+      height: 337px;
+
+      .icon-wrapper {
+        .about-icon {
+          width: 80px;
+          height: 80px;
+        }
+      }
+    }
+  }
+}
